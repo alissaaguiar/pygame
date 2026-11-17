@@ -1,123 +1,89 @@
-# Proposta Inicial do Jogo
+## Proposta Inicial do Jogo
 
-Este documento deve ser preenchido pelo grupo na etapa inicial do projeto.
-
-A proposta deve apresentar uma ideia simples, clara e viável para ser desenvolvida com **Python e Pygame** dentro do prazo disponível. Consulte o enunciado publicado no Canvas para conhecer o eixo temático e as orientações vigentes.
+> Versão preenchida a partir do template oficial da disciplina. O nome do jogo e os controles ainda são provisórios; os integrantes podem ajustar a proposta antes da entrega.
 
 ## 1. Nome provisório do jogo
 
-Informe o nome provisório do jogo.
-
-**Nome:**
-
-> Escreva aqui.
+**Nome:** Campanha Brasileira
 
 ## 2. Integrantes do grupo
 
-- Nome 1:
-- Nome 2:
-- Nome 3:
-- Nome 4:
+- Arthur Gabriel Rezende Rocha
+- Alissa Aguiar Fernandes
+- Gabriel Henrique Lourenço Pires
+- Brian Marcondes Braga
 
 ## 3. Tema escolhido
 
-Indique qual tema específico o grupo escolheu **dentro do eixo temático definido no enunciado**.
+**Tema:** Inteligência Artificial no Cotidiano e Uso Responsável, com foco no uso da IA em campanhas políticas, na avaliação crítica de informações e na tomada de decisões cidadãs.
 
-**Tema:**
+**Como esse tema se relaciona com o jogo?**
 
-> Escreva aqui.
-
-**Como esse tema se relaciona com o jogo?** Explique brevemente (2 a 4 linhas) como ele aparecerá nos objetivos, nas regras ou nos desafios, e não apenas nas imagens ou no cenário.
-
-> Escreva aqui.
+O jogador concorre à Presidência e enfrenta situações de campanha relacionadas à IA, como avaliar conteúdos possivelmente gerados ou manipulados, analisar propostas e escolher comunicações responsáveis. As respostas afetam o apoio popular, então o tema influencia diretamente as regras e o progresso do jogo.
 
 ## 4. Tipo de jogo
 
-Indique o estilo do jogo. Exemplos: desviar de obstáculos, coleta de itens, labirinto, perguntas e respostas, memória, Pong, Snake, Breakout, corrida ou sobrevivência simples.
-
-**Tipo escolhido:**
-
-> Escreva aqui.
+**Tipo escolhido:** Jogo educativo de perguntas e respostas com escolhas, decisões de campanha e progressão por territórios. A proposta visual em pixel art é provisória.
 
 ## 5. Descrição geral do jogo
 
-Explique, em poucas linhas, como o jogo funcionará. O que aparece na tela? O que o jogador controla? O que ele precisa fazer e quais desafios encontrará?
+O jogador assume o papel de uma pessoa candidata à Presidência do Brasil. Para conquistar apoio e avançar na campanha, responde a 20 missões sobre Inteligência Artificial e seu uso responsável. As missões podem aparecer como debates eleitorais, publicações em redes sociais, propostas de governo e desafios para avaliar a origem e a confiabilidade de imagens, textos ou notícias.
 
-**Descrição:**
-
-> Escreva aqui.
+O mapa do jogo terá quatro territórios fictícios de campanha: Norte, Sul, Leste e Oeste. A distribuição prevista é Norte (4 missões), Sul (5), Leste (5) e Oeste (6). O jogador escolhe por qual território começar e libera outros conforme conquista apoio. A IA será representada por situações e respostas simuladas no próprio jogo; não haverá conexão com serviços externos nem necessidade de treinar ou consultar um modelo real.
 
 ## 6. Objetivo do jogador
 
-Descreva o objetivo principal. Por exemplo: coletar itens, sobreviver por determinado tempo, chegar ao final de um percurso ou completar desafios.
-
-**Objetivo:**
-
-> Escreva aqui.
+Conquistar apoio popular suficiente para vencer a eleição e chegar à Presidência, tomando decisões fundamentadas sobre IA, cidadania e uso responsável da tecnologia.
 
 ## 7. Regras principais
 
-Liste até cinco regras que expliquem o funcionamento do jogo. Exemplos: o jogador começa com três vidas; acertos somam pontos; colisões retiram vidas.
-
-- Regra 1:
-- Regra 2:
-- Regra 3:
-- Regra 4:
-- Regra 5:
+- O jogador escolhe o território inicial; os outros territórios são liberados ao alcançar pelo menos 40% do apoio máximo possível no território atual.
+- Cada resposta correta acrescenta 20 pontos de apoio; cada resposta incorreta reduz 10 pontos.
+- O jogo terá no máximo 20 missões, distribuídas entre os quatro territórios; missões já concluídas não poderão ser repetidas.
+- Depois de liberar outros territórios, o jogador poderá voltar a territórios anteriores para realizar missões que ainda não concluiu.
+- A meta para vencer é alcançar 55% da pontuação máxima nacional possível antes de acabar o limite de missões.
 
 ## 8. Condição de vitória
 
-Explique como o jogador vence ou conclui a partida. Exemplos: alcançar uma pontuação, finalizar uma fase ou completar todas as tarefas.
-
-**Condição de vitória:**
-
-> Escreva aqui.
+A partida é vencida quando o jogador alcança pelo menos 55% da pontuação máxima nacional possível. Com 20 missões valendo até 20 pontos cada, o máximo é 400 pontos; portanto, a meta inicial é 220 pontos de apoio.
 
 ## 9. Condição de derrota ou encerramento
 
-Explique quando a partida termina ou como o jogador perde. Exemplos: esgotar as vidas, acabar o tempo ou atingir o limite de erros.
-
-**Condição de derrota ou encerramento:**
-
-> Escreva aqui.
+A partida termina em derrota se as 20 missões forem concluídas sem alcançar 220 pontos de apoio. A partida também se encerra quando o jogador vence a eleição. A porcentagem de apoio será calculada em relação ao máximo de pontos possível, conforme as regras acima.
 
 ## 10. Elementos previstos no jogo
 
-Descreva brevemente os elementos mais importantes, sem precisar detalhar a implementação.
-
-- **Personagem ou elemento principal:**
-- **Obstáculos ou desafios:**
-- **Itens ou objetos de interação (se houver):**
-- **Pontuação, vidas, tempo ou progresso:**
+- **Personagem ou elemento principal:** pessoa candidata controlada pelo jogador e um mapa de campanha.
+- **Obstáculos ou desafios:** perguntas e situações sobre confiabilidade de informações, conteúdos gerados por IA, privacidade, vieses e decisões responsáveis.
+- **Itens ou objetos de interação:** cartões de missão e alternativas de resposta; telas de debate, publicação em rede social, proposta de governo e análise de conteúdo.
+- **Pontuação, vidas, tempo ou progresso:** pontos de apoio popular, barra de progresso nacional, territórios liberados e contador de missões concluídas.
 
 ## 11. Controles previstos
 
-Informe como o jogador vai interagir com o jogo (por exemplo, setas para movimentar, espaço para agir ou mouse para selecionar).
-
-**Controles:**
-
-> Escreva aqui.
+**Controles:** clique do mouse para escolher uma alternativa; Enter para confirmar; Escape para voltar ao menu ou encerrar. Esses controles são uma proposta inicial e podem ser ajustados durante a implementação.
 
 ## 12. Principais dificuldades esperadas
 
-Cite até três dificuldades que o grupo espera enfrentar. Exemplos: movimentação, colisões, controle de tempo, testes ou uso do GitHub.
-
-- Dificuldade 1:
-- Dificuldade 2:
-- Dificuldade 3:
+- Criar perguntas e alternativas claras, equilibradas e ligadas ao uso responsável da IA.
+- Organizar a pontuação, o desbloqueio dos territórios e o limite de 20 missões sem inconsistências.
+- Exibir textos e alternativas de forma legível na janela do Pygame e testar as regras do jogo.
 
 ## 13. Escopo mínimo para a entrega final
 
-Descreva a **versão mais simples que já seria jogável**, com as interações e regras essenciais. Evite planejar funcionalidades demais.
-
-**Escopo mínimo:**
-
-> Escreva aqui.
+Uma versão executável em Python e Pygame com tela inicial, mapa com quatro territórios, seleção de missões, perguntas de múltipla escolha, pontuação de apoio, liberação de territórios conforme a regra de 40%, limite total de 20 missões e finais de vitória ou derrota conforme a meta de 55%. O conteúdo poderá ser armazenado em listas e dicionários; funções separadas cuidarão da exibição, seleção de respostas, atualização da pontuação e verificação do estado da partida. O jogo deve funcionar sem conexão à internet e sem uso de IA real.
 
 ## 14. Possíveis melhorias, caso haja tempo
 
-Liste até três funcionalidades extras para implementar somente depois que a versão mínima estiver funcionando. Exemplos: sons, fases, ranking, animações ou menu inicial.
+- Animações e efeitos sonoros em estilo pixel art.
+- Tela de histórico da campanha com respostas e variação do apoio popular.
+- Mais variedade visual para os territórios e os tipos de missão.
 
-- Melhoria 1:
-- Melhoria 2:
-- Melhoria 3:
+## 15. Organização inicial do código, dados e testes
+
+A estrutura seguirá o template da disciplina: `main.py` iniciará o jogo; `src/` reunirá as funções de telas, missões e regras; `data/` guardará perguntas e, se necessário, o progresso local; `assets/` conterá recursos visuais e sonoros; `tests/` terá testes para pontuação, cálculo do apoio, desbloqueio de territórios e condições de vitória e derrota.
+
+As missões podem ser representadas por listas e dicionários em arquivos locais. Imagens, fontes, sons ou trechos de código externos usados pelo grupo deverão ter a origem e, quando disponível, a licença registradas no `README.md`.
+
+## 16. Declaração de originalidade
+
+**Para validação do grupo antes da entrega:** confirmar que a proposta, os textos das missões e as mecânicas foram elaborados pelo grupo; que o template oficial será usado como base; e que qualquer recurso externo será identificado no `README.md`. O projeto não deve reproduzir integralmente um jogo existente ou um tutorial.
